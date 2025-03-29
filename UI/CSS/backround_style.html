@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML and CSS Examples</title>
+    
+
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, suscipit animi mollitia, beatae maxime facere hic quia, quidem dicta officiis qui nam. Odit libero consequuntur odio inventore, natus quae eos.
+        </p>
+    </div>
+    <style>
+        /* --- Root Variables for Consistent Styling --- */
+        :root {
+            --primary-color: rgb(255, 255, 255); /* White text */
+            --secondary-color: rgb(0, 0, 0); /* Black background */
+            --highlight-color: rgb(255, 165, 0); /* Orange highlight */
+            --shadow-color: red; /* Text shadow color */
+        }
+
+        /* Universal selector applies a red border to all elements */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+        }
+
+        /* Paragraph Styling */
+        p {
+            color: var(--primary-color); /* Text color from root variable */
+            background-color: var(--secondary-color); /* Background color from root variable */
+            text-align: justify; /* Align text to both left and right margins */
+            text-indent: 30px; /* Indent the first line */
+            line-height: 1.6; /* Increase space between lines */
+            word-spacing: 10px; /* Increase space between words */
+            letter-spacing: 2px; /* Increase space between letters */
+        }
+
+        /* Link Styling */
+        a {
+            color: var(--highlight-color); /* Orange text color for links */
+            text-decoration: none; /* Remove underline */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        /* Heading Styling */
+        h1 {
+            color: var(--primary-color); /* White text */
+            text-shadow: 5px 5px 0px var(--shadow-color); /* Red shadow effect */
+        }
+
+        /* Background Styling for Sections */
+        #demo1 {
+            background-image: url('https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: 50% 50%;
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Parallax effect */
+            height: 300px;
+        }
+
+        #demo2 {
+            background-image: url('https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: 30% 50%;
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 300px;
+        }
+
+        /* Pseudo-element examples */
+        h2::before {
+            content: "✨ "; /* Adds decorative content before heading */
+            color: var(--highlight-color);
+        }
+
+        h2::after {
+            content: " ✨"; /* Adds decorative content after heading */
+            color: var(--highlight-color);
+        }
+
+        p::first-letter {
+            font-size: 2rem; /* Enlarges the first letter */
+            font-weight: bold;
+            color: var(--highlight-color);
+        }
+
+        p::selection {
+            color: var(--secondary-color); /* Black text on selection */
+            background-color: var(--highlight-color); /* Orange background */
+        }
+
+        input::placeholder {
+            color: gray; /* Gray placeholder text */
+            font-style: italic; /* Italic style for placeholders */
+        }
+
+        /* Form input styling */
+        input[type="text"]:focus {
+            background-color: var(--highlight-color); /* Highlight on focus */
+            color: var(--secondary-color);
+        }
+
+        input[type="checkbox"]:checked {
+            transform: scale(1.5); /* Enlarge checkbox when checked */
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading with Pseudo-elements -->
+    <h1>Comprehensive Examples</h1>
+
+    <h2>Styled Paragraph and Links</h2>
+
+    <!-- Paragraph demonstrating various text properties -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum, arcu quis dignissim scelerisque, nulla sem consequat ligula, non tempor libero arcu vel felis.</p>
+
+    <!-- Anchor links demonstrating hover and text-decoration -->
+    <a href="#">This is a sample link</a>
+
+    <h2>Background Images and Parallax</h2>
+
+    <!-- Section with two background image examples -->
+    <section id="demo1"></section>
+    <section id="demo2"></section>
+
+    <h2>Pseudo-elements and Form Inputs</h2>
+
+    <!-- Form demonstrating placeholder and focus styling -->
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <input type="checkbox" checked> Checkbox Example
+    </form>
+
+    <h2>Text Selection and Special Styling</h2>
+
+    <!-- Paragraph demonstrating selection and pseudo-element styles -->
+    <p>Select this text to see the <span>customized selection styling</span> in action!</p>
+</body>
+</html>

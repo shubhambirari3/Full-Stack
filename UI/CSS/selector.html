@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+             
+             /* universal selctor */
+
+          *{
+            border: 1px solid red;
+          }
+
+        /* Element selector or tag selector */
+        /* p{
+            color: red;
+        } */
+
+        /* Id selctor */
+        #demo{
+            color: green; 
+            
+        }
+
+        /* Class Selector */
+          .newcls{
+            color: blue;
+            
+          }
+
+
+          /* Group Selector */
+          #demo,.newcls{
+            background-color: black;
+          }
+
+
+          /* Attribute selector */
+          input[type="text"]{
+            background-color: orange;
+          }
+
+
+          /* Descendent selector */
+          /* section div p span{
+            color: red;
+          } */
+
+
+          /* Child combinator */
+          section>div>p>span{
+            color: red;
+          }
+
+
+
+
+    </style>
+</head>
+<body>
+    <p class="newcls">Lorem ipsum dolor sit amet.</p>
+    <p id="demo">Lorem ipsum dolor sit amet.</p>
+    <p class="newcls">Lorem ipsum dolor sit amet.</p>
+
+    <input type="text">
+    <input type="password">
+    <input type="email">
+
+
+    <section>
+        <div>
+            <p><span>Inner data</span></p>
+        </div>
+    </section>
+    <span>Outer data</span>
+</body>
+</html>

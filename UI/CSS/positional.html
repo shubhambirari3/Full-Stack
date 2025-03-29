@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* Link Realted Pseudo class */
+        #an1:hover {
+            color: red;
+            background-color: yellow;
+        }
+
+        /* p:hover {
+            color: violet;
+        } */
+
+        #an2:active {
+            font-size: 40px;
+        }
+
+        #an3:visited {
+            color: aquamarine;
+        }
+
+
+        /* Input Realted  */
+
+        #inp1:focus {
+            background-color: red;
+        }
+
+        #inp2:required {
+            color: red;
+        }
+
+        #inp3:read-only {
+            color: blue;
+        }
+
+        #inp4:checked {
+            height: 100px;
+            width: 100px;
+        }
+
+        input[type="email"]:invalid {
+
+            color: red;
+        }
+
+        input[type="email"]:valid {
+
+            color: green;
+        }
+
+
+        /* position related */
+
+        li:first-child{
+            background-color: yellow;
+        }
+        li:last-child{
+            background-color: blue;
+        }
+        li:nth-child(2){
+            background-color: red;
+        }
+        li:empty{
+            background-color: purple;
+        }
+
+
+        h1::before{
+            content: "Hello ";
+            color: red;
+        }
+        h1::after{
+            content: " Welcome";
+            color: greenyellow;
+        }
+
+        p::selection{
+            color: red;
+            background-color: yellow;
+        }
+        #demo::placeholder{
+            color: red;
+        }
+        p::first-line{
+            background-color: grey;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="##" id="an1">Hover</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, dolorem saepe. Facilis, autem sit. Modi
+        recusandae vel veritatis vero illum eaque eos, nostrum molestiae vitae, fuga, ducimus animi iste reprehenderit.
+    </p>
+    <a href="##" id="an2">Active</a>
+    <a href="####" id="an3">visited</a>
+
+
+    <form action="">
+        <input type="text" placeholder="Enter Name" id="inp1">
+        <input type="text" id="inp2" required>
+        <input type="text" id="inp3" value="IT" readonly>
+        <input type="checkbox" id="inp4" checked>
+        <input type="email" placeholder="Enter Email">
+
+        <input type="submit">
+    </form>
+
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li></li>
+        <li>4</li>
+        <li></li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+    </ul>
+
+
+    <h1>ITPRENUER</h1>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, dicta optio vero assumenda incidunt placeat nisi exercitationem repellat, quidem ducimus nulla dolor debitis, distinctio fugit labore quas? Temporibus, nostrum facilis!</p>
+
+
+    <input type="text" id="demo" placeholder="Enter Data">
+
+
+
+
+
+</body>
+
+</html>

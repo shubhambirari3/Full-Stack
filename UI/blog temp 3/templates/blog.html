@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Blog</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.default.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Travel Blog</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="search_result.html" method="GET">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" name="q">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    
+    <!-- Main Content: Blog Listing -->
+    <div class="container mt-4">
+      <h2 class="mb-4">Blog Posts</h2>
+      <div class="row">
+        <!-- Blog Post Card 1 -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="https://source.unsplash.com/800x600/?hampi" class="card-img-top" alt="Hampi Ruins">
+            <div class="card-body">
+              <h5 class="card-title">Mystical Hampi</h5>
+              <p class="card-text">Discover the ancient ruins of Hampi, a UNESCO World Heritage site.</p>
+              <p class="card-text"><small class="text-muted">By Kumar Patel, June 20, 2025</small></p>
+              <a href="post.html?id=4" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Post Card 2 -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="https://source.unsplash.com/800x600/?goa" class="card-img-top" alt="Goa Beaches">
+            <div class="card-body">
+              <h5 class="card-title">Sun, Sand, and Sea in Goa</h5>
+              <p class="card-text">Experience the lively beaches and cultural richness of Goa.</p>
+              <p class="card-text"><small class="text-muted">By Sunita Rao, July 05, 2025</small></p>
+              <a href="post.html?id=5" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <div class="row">
+        <div class="col-md-8">
+          <!-- (Main blog listing content is above) -->
+        </div>
+        <div class="col-md-4">
+          <!-- Sidebar content (can also be saved as sidebar.html) -->
+          <aside class="sidebar">
+            <h3>Latest Posts</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="post.html?id=2">The Pink City - Jaipur</a>
+                <small class="d-block text-muted">April 10, 2025</small>
+              </li>
+              <li>
+                <a href="post.html?id=3">Backwaters of Kerala</a>
+                <small class="d-block text-muted">May 05, 2025</small>
+              </li>
+              <li>
+                <a href="post.html?id=4">Mystical Hampi</a>
+                <small class="d-block text-muted">June 20, 2025</small>
+              </li>
+            </ul>
+            <h3>Categories</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Historical</a></li>
+              <li><a href="#">Nature</a></li>
+              <li><a href="#">Cultural</a></li>
+              <li><a href="#">Adventure</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+      <div class="container">
+        <p>&copy; 2025 Travel Blog. All Rights Reserved.</p>
+        <p>
+          Follow us on:
+          <a href="#" class="text-white ml-2">Facebook</a> |
+          <a href="#" class="text-white ml-2">Twitter</a> |
+          <a href="#" class="text-white ml-2">Instagram</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

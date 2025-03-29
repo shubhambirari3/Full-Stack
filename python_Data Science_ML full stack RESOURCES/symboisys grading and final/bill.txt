@@ -1,0 +1,5 @@
+Menu:
+pizza : Rs.99.00
+dosa: Rs.40.00
+dabeli: Rs.30.00
+Total bill: Rs.169.00

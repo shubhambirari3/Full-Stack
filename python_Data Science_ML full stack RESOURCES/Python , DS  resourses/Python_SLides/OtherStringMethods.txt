@@ -1,0 +1,133 @@
+﻿
+
+Other String Methods:
+
+1. startswith(“string”, beg, end) :- The purpose of this function is to return true if the function begins with mentioned string(prefix) else return false.
+
+>>> str1 = "PythonClass"
+>>> str2 = "Python"
+>>> str1.startswith(str2)
+True
+
+
+2. endswith(“string”, beg, end) :- The purpose of this function is to return true if the function ends with mentioned string(suffix) else return false.
+
+>>> str1 = "ClassOnPython"
+>>> str2 = "Python"
+>>> str1.endswith(str2)
+True
+
+
+
+3. swapcase() :- This function is used to swap the cases of string i.e upper case is converted to lower case and vice versa.
+
+>>> str1 = "Python Class"
+>>> str1.swapcase()
+'pYTHON cLASS'
+
+
+
+4. title() :- This function converts the string to its title case i.e the first letter of every word of string is upper cased and else all are lower cased.
+
+>>> str1 = "python class"
+>>> str1.title()
+'Python Class'
+
+
+
+5. len() :- This function returns the length of the string.
+
+>>> str1 = "python class"
+>>> len(str1)
+12
+
+
+
+6. count(“string”, beg, end) :- This function counts the occurrence of mentioned substring in whole string. This function takes 3 arguments, substring, beginning position( by default 0) and end position(by default string length).
+
+>>> str1 = "python classes for python enthusiasts"
+>>> str1.count("python")
+2
+
+
+
+7. center() :- This function is used to surround the string with a character repeated both sides of string multiple times. By default the character is a space. Takes 2 arguments, length of string and the character.
+
+>>> "python".center(20,"-")
+'-------python-------'
+
+
+
+
+8. ljust() :- This function returns the original string shifted to left that has a character at its right. It left adjusts the string. By default the character is space. It also takes two arguments, length of string and the character.
+
+>>> "python".ljust(20,"-")
+'python--------------'
+
+
+
+9. rjust() :- This function returns the original string shifted to right that has a character at its left. It right adjusts the string. By default the character is space. It also takes two arguments, length of string and the character.
+
+>>> "python".rjust(20,"-")
+'--------------python'
+
+
+
+10. isalpha() :- This function returns true when all the characters in the string are alphabets else returns false.
+
+>>> "python".isalpha()
+True
+
+
+
+11. isalnum() :- This function returns true when all the characters in the string are combination of numbers and/or alphabets else returns false.
+
+>>> "python".isalnum()
+True
+>>> "python123".isalnum()
+True
+
+
+
+
+12. isspace() :- This function returns true when all the characters in the string are spaces else returns false.
+
+>>> "python class".isspace()
+False
+>>> "    ".isspace()
+True
+
+
+
+13. strip() :- This method is used to delete all the leading and trailing characters mentioned in its argument.
+
+>>> "***python***".strip("*")
+'python'
+
+
+
+14. lstrip() :- This method is used to delete all the leading characters mentioned in its argument.
+
+>>> "***python***".lstrip("*")
+'python***'
+
+
+
+15. rstrip() :- This method is used to delete all the trailing characters mentioned in its argument.
+
+>>> "***python***".rstrip("*")
+'***python'
+
+
+
+16. min(“string”) :- This function returns the minimum value alphabet from string.
+
+>>> min("python")
+'h'
+
+
+
+17. max(“string”) :- This function returns the maximum value alphabet from string.
+
+>>> max("python")
+'y'

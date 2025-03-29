@@ -1,0 +1,71 @@
+﻿Here are some of the most frequently asked interview questions in Django, categorized based on different aspects:
+
+
+1. Django Basics
+- What is Django, and why is it used?
+- How does Django differ from other web frameworks like Flask?
+- Explain Django’s MVT (Model-View-Template) architecture.
+- What are Django’s main features?
+- How does Django handle requests and responses?
+
+
+2. Models & Database
+- What is a Django Model? How does it interact with the database?
+- What are Django's ORM (Object-Relational Mapping) advantages?
+- How do you define a ForeignKey, OneToOneField, and ManyToManyField?
+- Explain the difference between `null=True` and `blank=True` in Django models.
+- How do you make database migrations in Django?
+
+
+3. Views & Templates
+- What is the difference between function-based views (FBV) and class-based views (CBV)?
+- How do you pass data from views to templates in Django?
+- How does Django handle static and media files?
+- What are template tags and filters in Django?
+
+
+4. Forms & Validations
+- What is the difference between Django forms and model forms?
+- How do you validate form data in Django?
+- How do you handle file uploads in Django?
+
+
+5. Authentication & Authorization
+- How does Django’s authentication system work?
+- How do you create custom user authentication in Django?
+- What are Django’s permissions and groups, and how do they work?
+
+
+6. Middleware
+- What is middleware in Django?
+- How do you create custom middleware in Django?
+- Explain some built-in middleware in Django.
+
+
+7. Django REST Framework (DRF)
+- What is Django REST Framework (DRF), and why is it used?
+- How do you create an API in Django?
+- What are serializers in DRF?
+- What is the difference between ModelSerializer and Serializer?
+- Explain token-based authentication in Django REST Framework.
+
+
+8. Caching & Performance Optimization
+- How does caching work in Django?
+- What are different types of caching in Django?
+- How do you optimize database queries in Django?
+
+
+9. Deployment & Security
+- How do you deploy a Django project?
+- What security features does Django provide?
+- How do you prevent SQL Injection and XSS in Django?
+- How do you handle environment variables in Django?
+
+
+10. Miscellaneous
+- How does Django handle sessions?
+- What is the difference between `get()` and `filter()` in Django ORM?
+- What are Django signals, and how do you use them?
+- How do you override Django admin functionalities?
+- Explain Django’s `pre_save` and `post_save` signals.

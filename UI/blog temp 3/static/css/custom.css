@@ -1,0 +1,39 @@
+/* custom.css */
+
+/* General body styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar spacing */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Jumbotron customization */
+.jumbotron {
+  background: url('https://source.unsplash.com/1600x900/?india') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Sidebar styling */
+.sidebar {
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

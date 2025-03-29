@@ -1,0 +1,501 @@
+General
+
+1.What are Python’s key features?
+>Python is interpreted, dynamically typed, and supports multiple programming paradigms (procedural, object-oriented, functional). 
+It emphasizes simplicity, readability, and has extensive libraries.
+
+2.What is the difference between a list and a tuple in Python?
+>A list is mutable (can be changed), whereas a tuple is immutable (cannot be changed). Lists use more memory compared to tuples.
+
+3.How is memory managed in Python?
+>Python uses dynamic memory allocation managed by the Python memory manager, and garbage collection is used for freeing up unused memory.
+
+4.What is a Python function, and how do you define it?
+>A function is a block of reusable code that performs a specific task. It is defined using the def keyword, followed by a name and parentheses.
+
+5.Explain the difference between mutable and immutable data types.
+>Mutable data types (e.g., lists, dictionaries) can be modified after creation. Immutable data types (e.g., strings, tuples) cannot be altered.
+Mutable Data Types: Lists, Dictionaries, Sets
+Immutable Data Types: Numbers, Strings, Tuples
+
+6.What is Python
+Python is a general-purpose , interpreted, object-oriented,
+high-level programming language.
+Python is a programming language that is widely used in
+web applications, software development, data science, and
+machine learning (ML).
+Python has a simple syntax similar to the English
+language.
+Python has syntax that allows developers to write
+programs with fewer lines than some other programming
+languages.
+
+7.History
+Invented in the Netherlands, early 90s by Guido van
+Rossum
+Python was conceived in the late 1980s and its
+implementation was started in December 1989
+Guido Van Rossum is fan of 'Monty Python's Flying
+Circus', this is a famous TV show in Netherlands
+Named after Monty Python
+Open sourced from the beginning
+
+8.Differences between Natural and
+programming language
+
+I.Means to communicate
+human-to-human.
+2. Has not-so-strict Grammar
+and set of rules
+3. Ambiguous and open to
+interpretation.
+
+1.Means to communicate
+human-to-computers
+2. Has STRICT Grammar and
+set of rules
+3. Unambiguous execution.
+
+9.Scope of Python
+• Science
+Bioinformatics
+System Administration
+Unix
+• Web logic
+Web sphere
+Web Application Development
+• CGI
+• Jython - Servlets
+Testing scripts
+
+10.Features of Python:
+Easy to use and Read - Python's syntax is clear and easy to read,
+making it an ideal language for both beginners and experienced
+programmers.
+
+Dynamically Typed - The data types of variables are determined
+during run-time. We do not need to specify the data type of a variable
+during writing codes.
+
+High-level - High-level language means human readable code.
+
+Interpreted language: Python is an interpreted language, which
+means that the code is run line by line.
+
+Object-Oriented Programming Language - It supports abstraction,
+encapsulation, inheritance, and polymorphism which is considered
+important by the Python coder.
+
+Open Source - Python is an open-source, cost-free programming
+language. It is utilized in several sectors and disciplines as a result.
+
+11.Advantages of Python
+Presence of third-party modules
+Extensive support libraries(NumP for numerical calculations,
+Pandas for data analytics etc)
+Open source and community development
+Versatile, Easy to read, learn and write
+User-friendly data structures
+High-level language
+Dynamically typed language(No need to mention data type based
+on the value assigned, it takes data type)
+Object-oriented language
+
+12.Disadvantages of Python
+Lack of Standardized Design Patterns
+No Built-In Database Management System
+Not Well Suited For Large Applications
+Poor Security Features
+Weak in Mobile Computing
+Trouble in Using Other Languages
+Gets Slow in Speed
+
+13.
+
+
+
+
+.
+Data Types
+
+
+6.What are Python's built-in data types?
+>Python's built-in types include numeric (int, float, complex), sequence (str, list, tuple), mapping (dict), set types, and boolean (bool).
+
+7.What is the difference between None and 0 in Python?
+>None represents the absence of a value, while 0 is a numeric value. They serve different purposes and are not equal.
+
+8.How do you create a dictionary in Python?
+>A dictionary is created using curly braces {} with key-value pairs:
+my_dict = {'key1': 'value1', 'key2': 'value2'}.
+
+.
+
+Control Flow
+
+
+9.What are if, elif, and else used for in Python?
+>These keywords are used for decision-making: if executes code if a condition is true, elif checks additional conditions, and else handles all other cases.
+
+
+10.How do you write a for loop in Python?
+>for item in iterable:
+      blockof code
+
+11.What is the difference between a while loop and a for loop?
+>A for loop iterates over a sequence, while a while loop continues as long as its condition evaluates to true.
+
+
+Functions
+
+12.What is the difference between return and print?
+>return sends a value back to the caller of the function, while print outputs the value to the console.
+
+13.How do you pass arguments to a function?
+>Arguments are passed by listing them inside the parentheses when calling the function:
+def func(arg1, arg2): pass  
+func(1, 2)
+
+14.What is the purpose of a default argument in a Python function?
+>A default argument allows you to define a function parameter with a default value that is used if no value is provided during the function call.
+
+
+Error Handling
+
+
+15.What is the purpose of a try/except block in Python?
+>It is used to handle exceptions and prevent program crashes by executing alternative code when an error occurs.
+
+16.How can you handle multiple exceptions in Python?
+>Use a tuple to specify multiple exceptions in an except block:
+except (TypeError, ValueError): pass
+What does the finally block do?
+The finally block is executed no matter what, whether an exception occurs or not. It is often used for cleanup.
+
+
+File Handling
+
+
+17.How do you open a file in Python?
+>Use the open() function:
+
+file = open('filename', 'mode')
+What are the different file modes available?
+Modes include r (read), w (write), a (append), and b (binary), among others.
+
+18.How do you read and write to a file?
+>Read: file.read() or file.readline()
+Write: file.write('text')
+
+
+Miscellaneous
+
+
+19.What is the difference between is and ==?
+>is checks whether two variables refer to the same object (identity), while == checks if their values are equal (equality).
+
+20.How do you check the type of a variable in Python?
+>Use the type() function:
+
+21.What is the purpose of the len() function?
+>The len() function returns the number of items in an object, such as a list, string, or dictionary.
+
+What is the difference between for and while loops?
+A for loop is used when the number of iterations is known, iterating over a sequence. A while loop is used when iterations depend on a condition being true.
+
+What is the difference between return and print?
+return sends a value back from a function to the caller, while print outputs a value to the console.
+
+What is the difference between a list and a tuple?
+A list is mutable (can be changed), while a tuple is immutable (cannot be changed).
+
+What is the purpose of the break statement?
+The break statement is used to exit a loop prematurely when a condition is met.
+
+What is the difference between is and ==?
+is checks for object identity (whether two objects are the same), while == checks for value equality.
+
+What is the purpose of the pass statement?
+The pass statement acts as a placeholder where a statement is syntactically required but no action is needed.
+
+What is a lambda function?
+A lambda function is an anonymous function defined using the lambda keyword, typically used for small, short-term operations.
+
+What is the difference between append() and extend()?
+append() adds a single element to the end of a list, while extend() adds all elements of an iterable to the list.
+
+What is a Python dictionary?
+A dictionary is an unordered collection of key-value pairs, defined using curly braces {}.
+
+What is the purpose of try and except blocks?
+They are used to handle exceptions and errors in Python programs.
+
+What is the difference between deep copy and shallow copy?
+A shallow copy copies references to objects, while a deep copy creates entirely new objects.
+
+What are Python's data types?
+Python has several data types, including int, float, str, list, tuple, dict, and set.
+
+What is the use of the with statement?
+The with statement is used for resource management, such as opening and closing files.
+
+What is the difference between mutable and immutable types?
+Mutable types (e.g., lists) can be modified, while immutable types (e.g., strings, tuples) cannot.
+
+What is list comprehension?
+List comprehension is a concise way to create lists using a single line of code.
+
+What is the purpose of the global keyword?
+The global keyword allows a variable to be modified outside its local scope.
+
+What is the *args and **kwargs syntax in Python?
+*args allows a function to accept a variable number of positional arguments. **kwargs allows a function to accept a variable number of keyword arguments.
+
+What is the difference between a module and a package?
+A module is a single Python file, while a package is a collection of modules organized in directories.
+
+What is the purpose of the self keyword in a class?
+self represents the instance of the class and is used to access instance attributes and methods.
+
+What is the difference between del and remove()?
+del deletes an item by index or an entire object, while remove() deletes a specific element by value from a list.
+
+What is the purpose of the id() function?
+The id() function returns the memory address of an object.
+
+What is the difference between @staticmethod and @classmethod?
+@staticmethod defines a method that doesn’t access the class or instance, while @classmethod takes a class as its first argument and can modify the class state.
+
+What is the use of the len() function?
+The len() function returns the number of items in an object, such as a list, string, or tuple.
+
+What is the difference between None and 0?
+None is a special value representing the absence of value, while 0 is a numeric value.
+
+What is a Python set?
+A set is an unordered collection of unique elements defined using curly braces {} or the set() function.
+
+What is the purpose of the enumerate() function?
+The enumerate() function adds a counter to an iterable, returning it as an enumerate object.
+
+What is the difference between pop() and remove() in lists?
+pop() removes an item by index and returns it, while remove() deletes an item by value without returning it.
+
+What is the purpose of the zip() function?
+The zip() function combines multiple iterables into pairs of tuples.
+
+What is slicing in Python?
+Slicing allows you to access a portion of a sequence using a start, stop, and step index.
+
+What is the purpose of the sorted() function?
+The sorted() function returns a new sorted list from an iterable without modifying the original.
+
+What is the difference between read() and readlines() in file handling?
+read() reads the entire file as a string, while readlines() reads the file into a list of lines.
+
+
+What is the purpose of the super() function?
+The super() function allows access to methods in a parent class, typically in inheritance.
+
+What is the difference between any() and all()?
+any() returns True if at least one element is true, while all() returns True only if all elements are true.
+
+What is the purpose of the re module?
+The re module provides functions for working with regular expressions in Python.
+
+What is the difference between range() and xrange()?
+In Python 2, range() creates a list, while xrange() generates values lazily. In Python 3, only range() exists and behaves like xrange().
+
+What is the purpose of the map() function?
+The map() function applies a given function to all items in an iterable and returns an iterator.
+
+What is the use of the filter() function?
+The filter() function filters elements in an iterable based on a function that returns True or False.
+
+What is a generator in Python?
+A generator is a function that yields values lazily, one at a time, using the yield keyword.
+
+What is the purpose of the itertools module?
+The itertools module provides tools for creating and working with iterators efficiently.
+
+What is the difference between shallow and deep copies in Python?
+A shallow copy copies references to objects, while a deep copy recursively copies all objects.
+
+What is the difference between join() and split()?
+
+join() combines a list of strings into a single string, while split() divides a string into a list based on a delimiter.
+What is the purpose of the eval() function?
+
+The eval() function parses and evaluates a Python expression as a string.
+What is the difference between open() in modes 'r' and 'rb'?
+
+'r' opens a file in text mode, while 'rb' opens it in binary mode.
+What is the purpose of the os module?
+
+The os module provides functions to interact with the operating system, such as file and directory operations.
+What is the purpose of __name__ == "__main__"?
+
+It ensures that a script is run directly and not imported as a module.
+What is the difference between == and != operators?
+
+== checks if two values are equal, while != checks if they are not equal.
+What is a Python decorator?
+
+A decorator is a function that modifies another function or method's behavior without changing its structure.
+What is the purpose of the isinstance() function?
+
+The isinstance() function checks if an object is an instance of a specified class or a tuple of classes.
+What is the difference between frozenset and set?
+
+set is mutable, while frozenset is immutable.
+What is the difference between abs() and round()?
+
+abs() returns the absolute value of a number, while round() rounds a number to a specified number of decimal places.
+What is the purpose of the dir() function?
+
+The dir() function returns a list of attributes and methods available for an object.
+What is the difference between compile() and exec()?
+
+compile() compiles Python code into a code object, while exec() executes a dynamically compiled code object.
+What is the purpose of the heapq module?
+
+The heapq module provides functions for implementing heaps (priority queues).
+What is the difference between __str__() and __repr__()?
+
+__str__() is for creating a user-friendly string representation, while __repr__() is for an unambiguous representation meant for debugging.
+What is the use of the hash() function?
+
+The hash() function returns a hash value of an object (used in dictionaries and sets).
+What is the difference between @property and getter methods?
+
+@property creates a read-only property, while a getter method is explicitly defined to retrieve a value.
+What is the purpose of the collections module?
+
+The collections module provides specialized data structures like deque, Counter, OrderedDict, etc.
+What is the difference between a function and a method?
+
+A function is independent and defined outside of a class, while a method is associated with a class.
+What is the use of the re.findall() method?
+
+The re.findall() method returns all matches of a pattern in a string as a list.
+What is the purpose of pytest?
+
+pytest is a testing framework for writing and running test cases in Python.
+
+
+
+. What is the difference between for and while loops?
+   * **For loop:** Used for iterating over a sequence (list, tuple, string, etc.) a fixed number of times.
+   * **While loop:** Used for executing a block of code repeatedly as long as a given condition is True.
+
+2. What is the difference between return and print?
+   * **return:** Used to send a value back to the caller function.
+   * **print:** Used to display output on the console.
+
+3. What is a list in Python?
+   * A list is an ordered collection of items, enclosed in square brackets `[]`.
+
+4. What is a tuple in Python?
+   * A tuple is an ordered collection of items, enclosed in parentheses `()`. Unlike lists, tuples are immutable.
+
+5. What is a dictionary in Python?
+   * A dictionary is an unordered collection of key-value pairs, enclosed in curly braces `{}`.
+
+6. What is a set in Python?
+   * A set is an unordered collection of unique elements, enclosed in curly braces `{}`.
+
+7. What is the difference between a list and a tuple?
+   * Lists are mutable, while tuples are immutable.
+
+8. What is the difference between a set and a dictionary?
+   * Sets store only unique elements, while dictionaries store key-value pairs.
+
+9. What is the purpose of the `len()` function?
+   * It returns the length (number of elements) of a sequence (list, tuple, string, etc.).
+
+10. What is the purpose of the `in` operator?
+   * It checks if a value is present in a sequence.
+
+11. What is the purpose of the `range()` function?
+   * It generates a sequence of numbers.
+
+12. What is the purpose of the `enumerate()` function?
+   * It returns an iterator of tuples containing the index and value of each element in a sequence.
+
+13. What is the purpose of the `zip()` function?
+   * It takes multiple iterables and aggregates them in a tuple.
+
+14. What is the purpose of the `map()` function?
+   * It applies a function to each element of an iterable and returns an iterator.
+
+15. What is the purpose of the `filter()` function?
+   * It filters elements from an iterable based on a given function.
+
+16. What is the purpose of the `reduce()` function?
+   * It applies a function to an iterable, reducing it to a single value.
+
+17. What is the difference between `==` and `is` operators?
+   * `==` checks for equality in value, while `is` checks for object identity.
+
+18. What is the purpose of the `try-except` block?
+   * It handles exceptions and prevents program crashes.
+
+19. What is the purpose of the `with` statement?
+   * It ensures proper resource management (e.g., closing files).
+
+20. What is the purpose of the `__init__` method in a class?
+   * It is the constructor of a class, used to initialize object attributes.
+
+
+
+
+
+
+programs
+
+1.check number even or odd
+>if lambda x : x%2==0 :
+      print(f"{x} is even")
+else :
+     print(x , is odd)
+
+2. find the  largest of three numbers
+> numbers  = []
+for i in range(3):
+    numbers.append(int(input("enter num")))
+sortinng = numbers.sort()
+print(sortinng[-1])
+
+3. #calculate the  sum of elements in the  list
+>numbers = [23,12,32] 
+sum = 0
+for i in numbers:
+      sum +=i
+
+print(sum)
+
+4.Check if a string is a palindrome.
+>string="mom"
+if string == string[::-1]:
+    print("it is")
+else:
+    print("its not")
+
+#5.Count the number of vowels in a string
+string = "hello"
+count = 0
+for i in string:
+    if i in "aAeEiIoOuU":
+        count+=1
+print(count)
+
+5.for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+

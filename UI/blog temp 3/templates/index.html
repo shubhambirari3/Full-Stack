@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Home</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.default.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Travel Blog</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="search_result.html" method="GET">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" name="q">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Welcome to Travel Blog</h1>
+      <p class="lead">Discover the beauty of India with our travel stories, guides, and tips.</p>
+      <a class="btn btn-primary btn-lg" href="blog.html" role="button">Read Our Blog</a>
+    </div>
+    
+    <!-- Featured Posts -->
+    <div class="container">
+      <div class="row">
+        <!-- Featured Post 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://source.unsplash.com/800x600/?taj-mahal" class="card-img-top" alt="Taj Mahal">
+            <div class="card-body">
+              <h5 class="card-title">Taj Mahal</h5>
+              <p class="card-text">Experience one of the world's most iconic monuments.</p>
+              <p class="card-text"><small class="text-muted">By Rajesh Singh, March 15, 2025</small></p>
+              <a href="post.html?id=1" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Featured Post 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://source.unsplash.com/800x600/?jaipur" class="card-img-top" alt="Jaipur">
+            <div class="card-body">
+              <h5 class="card-title">The Pink City - Jaipur</h5>
+              <p class="card-text">Explore the vibrant culture and history of Jaipur.</p>
+              <p class="card-text"><small class="text-muted">By Anjali Kumar, April 10, 2025</small></p>
+              <a href="post.html?id=2" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Featured Post 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://source.unsplash.com/800x600/?kerala" class="card-img-top" alt="Kerala Backwaters">
+            <div class="card-body">
+              <h5 class="card-title">Backwaters of Kerala</h5>
+              <p class="card-text">Enjoy a serene journey through the lush backwaters of Kerala.</p>
+              <p class="card-text"><small class="text-muted">By Priya Menon, May 05, 2025</small></p>
+              <a href="post.html?id=3" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+      <div class="container">
+        <p>&copy; 2025 Travel Blog. All Rights Reserved.</p>
+        <p>
+          Follow us on:
+          <a href="#" class="text-white ml-2">Facebook</a> |
+          <a href="#" class="text-white ml-2">Twitter</a> |
+          <a href="#" class="text-white ml-2">Instagram</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

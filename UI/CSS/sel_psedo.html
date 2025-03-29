@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors and Classes</title>
+    <style>
+        /* --- CSS Selectors and Examples --- */
+
+        /* 1. Universal Selector: Applies styles to all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 2. Element Selector: Targets specific HTML tags */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            color: gray;
+            margin: 10px 20px;
+        }
+
+        /* 3. ID Selector: Targets a single unique element */
+        #unique-heading {
+            color: crimson;
+            text-transform: uppercase;
+        }
+
+        /* 4. Class Selector: Targets multiple elements with the same class */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* 5. Group Selector: Applies the same style to multiple selectors */
+        h2, h3 {
+            color: teal;
+            margin: 20px;
+        }
+
+        /* 6. Attribute Selector: Targets elements based on their attributes */
+        input[type="text"] {
+            border: 2px solid lightgray;
+            padding: 5px;
+        }
+
+        input[type="text"]:focus {
+            border-color: blue;
+        }
+
+        /* --- Pseudo-classes --- */
+
+        /* Link pseudo-classes */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        /* Form input pseudo-classes */
+        input:required {
+            border-color: orange;
+        }
+
+        input:valid {
+            border-color: green;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+
+        /* Structural pseudo-classes */
+        ul li:first-child {
+            font-weight: bold;
+        }
+
+        ul li:last-child {
+            color: blue;
+        }
+
+        ul li:nth-child(2) {
+            color: darkgreen;
+        }
+
+        /* --- Root Selector --- */
+        :root {
+            --primary-color: #4caf50;
+            --secondary-color: #ff9800;
+            --font-size-large: 1.5em;
+        }
+
+        body {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: var(--font-size-large);
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--primary-color);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors, Pseudo-classes, and Root Variables</h1>
+
+    <!-- ID Selector -->
+    <h2 id="unique-heading">This is a Unique Heading</h2>
+
+    <!-- Class Selector -->
+    <p class="highlight">This paragraph is highlighted using a class selector.</p>
+    <p>This paragraph uses default styling.</p>
+
+    <!-- Group Selector -->
+    <h2>Group Selector Example</h2>
+    <h3>This is part of the group selector example.</h3>
+
+    <!-- Attribute Selector -->
+    <form>
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter your email">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Pseudo-classes -->
+    <a href="#">This is a link</a>
+
+    <ul>
+        <li>First Item (first-child)</li>
+        <li>Second Item (nth-child(2))</li>
+        <li>Last Item (last-child)</li>
+    </ul>
+
+    <!-- Root Variables -->
+    <button>Click Me</button>
+
+</body>
+</html>

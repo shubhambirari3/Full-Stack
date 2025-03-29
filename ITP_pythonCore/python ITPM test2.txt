@@ -1,0 +1,194 @@
+##Shubham Birari (Python ITPM AUG )
+ 
+           ## python test 2 (23-11-2024)
+
+ ##1.	WAP To Reverse a String 
+ 
+ string = "shubham"
+ string[::-1]
+ print("string) 
+ 
+ # mahbush
+ 
+ ##2.	WAP To Check if a String is a Palindrome
+ 
+ str2 = "tenet"
+if str2 == "".join(reversed(str2)):
+    print("it is palindrom")
+else:
+    print("it is not palindrom")
+	
+ # it is palindrom
+ 
+ ##3.	WAP To Check if Two Strings are Anagrams
+ 
+ str1 = "listen"
+ str2 = "silent"
+
+ is_anagram = sorted(str1.lower()) == sorted(str2.lower())
+
+ print("The strings are anagrams." if is_anagram else "The strings are not anagrams.")
+ 
+ #The strings are anagrams.
+ 
+ ##4.	WAP To Find the Frequency of Characters in a String
+ 
+ string = "shubham"
+ str.count("a")
+ #2
+ 
+ ##5.	WAP To Convert the First Letter of Each Word to Uppercase
+ string = "shubham birari"
+ string.title()
+ #Shubham Birari
+ 
+ ##6.	WAP To Reverse a List Without Using Built-in Functions
+list = [123,3,1233,525,56,234]
+list[::-1]
+print(list)
+#[234, 56, 525, 1233, 3, 123]
+
+##7.	WAP To Remove Duplicates from a List
+list2 = [2,23,23,33,33,34,45,56,67]
+new_list = set(list2)
+list(new_list)
+#[2, 23, 33, 34, 45, 56, 67]
+
+##8.	WAP To Find the Second Largest Element in a List
+list2=[2, 23, 23, 33, 33, 34, 45, 56, 67]
+unique_sorted_list = sorted(set(list2))
+if len(unique_sorted_list) < 2:
+    print("The list does not have a second largest element.")
+else:
+    print("The second largest element is:", unique_sorted_list[-2])
+
+	#[2, 23, 23, 33, 33, 34, 45, 56, 67]
+	The second largest element is: 56
+
+##9.	WAP To Find All Pairs in a List That Sum Up to a Given Number
+def find_pairs(lst, target_sum):
+    pairs = []
+    seen = set()
+    for num in lst:
+        complement = target_sum - num
+        if complement in seen:
+            pairs.append((complement, num))
+        seen.add(num)
+    return pairs
+
+lst = [1, 2, 3, 4, 5, 6]
+target_sum = 7
+print("Pairs:", find_pairs(lst, target_sum))
+ #Pairs: [(3, 4), (2, 5), (1, 6)]
+ 
+ ##10.	WAP To Check if Two Sets are Disjoint
+ set1 = {12,23,343,23}
+ set2 = {32,23,4,54}
+ set1.isdisjoint(set2)
+  #false
+  
+ ##11.	WAP To Find the Symmetric Difference Between Two Set
+ set1 = {12,23,343,23}
+ set2 = {32,23,4,54}
+ set1.symmetric_difference(set2)
+ #{4,12,23,32,54,343}
+ 
+ ##12.	 WAP To Print All Prime Numbers Within a Given Range**
+def print_primes(start, end):
+    for num in range(start, end + 1):
+        if num > 1:  
+            is_prime = True
+            for i in range(2, int(num ** 0.5) + 1):  
+                if (num % i) == 0: 
+                    is_prime = False
+                    break
+            if is_prime:  
+                print(num , end=",")
+print_primes(0, 100))
+ #2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,
+
+##13.	WAP To Simulate a Basic Password Check That Limits to 3 Attempts*
+def password_check():
+    correct_password = "secure123"  
+    max_attempts = 3  
+
+    for attempt in range(1, max_attempts + 1):
+        entered_password = input(f"Attempt {attempt}/{max_attempts}: Enter your password: ")
+
+        if entered_password == correct_password:
+            print("Access granted!")
+            return  
+        else:
+            remaining_attempts = max_attempts - attempt
+            if remaining_attempts > 0:
+                print(f"Incorrect password. You have {remaining_attempts} attempts left.")
+            else:
+                print("Access denied. You have used all attempts.")
+
+
+password_check()
+#Incorrect password. You have 2 attempts left.
+#Incorrect password. You have 1 attempts left.
+#Access granted!
+
+
+##14.	WAP To Keep Multiplying a Number by 2 Until It Becomes Greater Than 1000**
+def double_until_greater_than_100(n):
+    while n <= 100:
+        n = n * 2
+
+    print(n , "number  goes to greater than 100")
+
+double_until_greater_than_100(7)
+#112 number  goes to greater than 100
+
+15.	WAP To Sort a List Without Using the `sort()` Method
+list3 = [22,2,43,54,234]
+accen_order =[]
+while list1:
+    min_value = min(list1)
+    accen_order.append(min_value)
+    list1.remove(min_value)
+#[2, 22, 43, 54, 234]
+
+##16.	WAP To Find the Cumulative Sum of a List
+list1 = [1,2,3,4]
+sum = 0
+for i in list1:
+  sum += i
+  
+ print(sum)
+ #10
+
+##17.	WAP To Flatten a Nested List
+nested_list = [[1, 2], [3, 4], [5, 6]]
+flat_list = [item for sublist in nested_list for item in sublist]
+print(flat_list)
+#[1, 2, 3, 4, 5, 6]
+
+##18.	WAP To Convert a List to a Set and Vice Versa
+list3 = [23,12,33]
+set2 = {23,34,43}
+list3 = set(list3)
+set2 = list(set2)
+
+##19.	WAP To Implement a Simple Menu-Driven Program Using While Loop
+def menu_driven_program():
+    while True :
+        print("\nMenu")
+        print("1. Option 1")
+        print("2. Option 2")
+        print("3. Exit")
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            print("You have chosen Option 1")
+        elif choice == "2":
+            print("You have chosen Option 2")
+        elif choice == "3":
+            print("Exiting the program")
+            break
+        else :
+            print("Invalid choice. Please choose a valid option.")
+			
+##

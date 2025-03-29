@@ -1,0 +1,42 @@
+create database Test_Trigger;
+use Test_Trigger;
+drop database Test_Trigger;
+show tables ;
+
+CREATE TABLE USERS(
+			ID INT AUTO_INCREMENT,
+            NAME VARCHAR(100) NOT NULL,
+            AGE INT NOT NULL,
+			BIRTH_DATE VARCHAR(100),PRIMARY KEY(ID));
+
+CREATE TABLE NOTIFICATIONS(
+			ID INT AUTO_INCREMENT,
+            BIRTH_DATE VARCHAR(100),
+			NOTIFICATIONS VARCHAR(255) NOT NULL,
+            PRIMARY KEY(ID));
+
+DELIMITER //
+CREATE TRIGGER after_insert AFTER INSERT ON USERS FOR EACH ROW
+BEGIN
+   IF NEW.BIRTH_DATE IS NOT NULL THEN
+   INSERT INTO NOTIFICATIONS VALUES
+   (new.ID, new.BIRTH_DATE, CONCAT('Happy Birthday, ', NEW.NAME, '!'));
+END IF;
+END //
+DELIMITER ;
+
+#
+show triggers;
+
+INSERT INTO USERS (NAME, AGE, BIRTH_DATE) VALUES 
+('James', 23, '24/06/1999'),
+('Tommy', 21, '12/01/2001');
+
+delete from NOTIFICATIONS where id = 1 or id = 2 ;
+
+select * from USERS;
+select * from NOTIFICATIONS;
+ 
+
+
+
